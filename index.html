@@ -26,6 +26,11 @@
       background-color: white;
     }
 
+    .desc{
+      padding: 40px;
+      font-size: 20px;
+    }
+
 
     /* Main column */
     .main {
@@ -83,14 +88,14 @@
       padding-right: 5px;
       padding-left: 5px;
     }
+
+    .hero-text{
+      margin-top: 130px;
+    }
     .button.see-more {
       left: 45px;
       top: 0px;
-      padding-right: 32px;
-      padding-left: 32px;
-      -webkit-align-self: center;
-      -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
+      padding: 16px 32px;
       align-self: center;
       font-size: 16px;
     }
@@ -98,13 +103,8 @@
       position: relative;
       top: 48px;
       display: inline;
-      width: auto;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      padding-left: 16px;
-      border-style: solid;
-      border-width: 3px;
-      border-color: #4a5968;
+      padding: 15px;
+      border: 3px solid #4a5968;
       border-radius: 50px;
       background-color: hsla(208.00000000000003, 82.57%, 57.25%, 0.00);
       font-family: Lato, sans-serif;
@@ -135,7 +135,17 @@
 <body>
 
   <div class="header">
-
+      <div class="project-number">
+          <div class="text-block">01</div>
+          <div class="text-block-2">01</div>
+        </div>
+        <div class="desc">
+            Software Developer with a history of working in the financial services industry and a Master's degree focused in Informatics from Hochschule RheinMain. Skilled in Vue.js, Requirements Analysis, ITIL, and Ruby on Rails.
+          </div>
+          <a href="MARIA MAZUR_en.pdf" 
+          class="button see-more w-button"
+          download
+          >Download CV</a>
   </div>
 
   <div class="main">
@@ -150,11 +160,8 @@
       <h1 class="hero-line2"><span>I’m a Software Developer from Germany.</span></h1>
     </div>
 
-    <a href="/cuisine-actuelle-digital-publishing" class="button see-more w-button">See more</a>
-    <div class="project-number">
-        <div class="text-block">mm</div>
-        <div class="text-block-2">mm</div>
-      </div>
+
+
   </div>
 
 </body>
