@@ -17,18 +17,19 @@
       margin: 0;
       background-color: white;
       display: flex;
+      height: 100%;
     }
 
     /* Header/logo Title */
     .header {
       width: 50%;
-      height: 100vh;
+      height: 100%;
       background-color: white;
     }
 
-    .desc{
+    .desc {
       padding: 40px;
-      font-family: courier new,courier,monospace;
+      font-family: courier new, courier, monospace;
       font-weight: 400;
       font-display: swap;
       -webkit-font-smoothing: subpixel-antialiased;
@@ -40,7 +41,7 @@
     /* Main column */
     .main {
       width: 50%;
-      height: 100vh;
+      height: 100rem;
       background-color: black;
     }
 
@@ -55,6 +56,7 @@
       text-transform: uppercase;
       margin: 10px;
     }
+
     .project-number {
       display: inline-block;
       margin-right: 21px;
@@ -72,7 +74,7 @@
       font-size: 62px;
       text-align: right;
     }
-    
+
     .text-block-2 {
       position: relative;
       z-index: 4;
@@ -94,9 +96,10 @@
       padding-left: 5px;
     }
 
-    .hero-text{
+    .hero-text {
       margin-top: 130px;
     }
+
     .button.see-more {
       left: 45px;
       top: 0px;
@@ -104,6 +107,7 @@
       align-self: center;
       font-size: 16px;
     }
+
     .button {
       position: relative;
       top: 48px;
@@ -119,10 +123,19 @@
       text-align: center;
       letter-spacing: 2px;
       text-transform: uppercase;
-      }
+    }
 
     span {
       background-color: #4a5968;
+    }
+    .certificates img {
+      height: 50px;
+      margin: 0 40px;
+      border-radius: 50px;
+      filter: grayscale(100%);
+    }
+    .certificates img:hover {
+      filter: grayscale(100%)invert(100%);
     }
 
     /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -140,17 +153,29 @@
 <body>
 
   <div class="header">
+    <div class="project-number">
+      <div class="text-block">01</div>
+      <div class="text-block-2">01</div>
+    </div>
+    <div class="desc">
+      Software Developer with a history of working in the financial services industry and a Master's degree focused in
+      Informatics from Hochschule RheinMain. Skilled in Vue.js, Requirements Analysis and Ruby on Rails.
+    </div>
+    <div>
+      <a href="MARIA MAZUR_en.pdf" class="button see-more w-button" download>Download CV</a>
+    </div>
       <div class="project-number">
-          <div class="text-block">01</div>
-          <div class="text-block-2">01</div>
+      <div class="text-block">02</div>
+      <div class="text-block-2">02</div>
+    </div>
+      <div class="desc">
+          My certificates.
         </div>
-        <div class="desc">
-            Software Developer with a history of working in the financial services industry and a Master's degree focused in Informatics from Hochschule RheinMain. Skilled in Vue.js, Requirements Analysis, ITIL, and Ruby on Rails.
-          </div>
-          <a href="MARIA MAZUR_en.pdf" 
-          class="button see-more w-button"
-          download
-          >Download CV</a>
+      <div class="certificates">
+          <a href="Mazur_Q_ITIL.pdf"  download>
+              <img  src="serveimage.jpeg">
+          </a>
+        </div>
   </div>
 
   <div class="main">
@@ -164,11 +189,6 @@
       <h1 class="hero-line1"> <span>Hello, I'm Maria.</span></h1>
       <h1 class="hero-line2"><span>I’m a Software Developer from Germany.</span></h1>
     </div>
-
-
-
   </div>
-
 </body>
-
 </html>
