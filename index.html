@@ -5,180 +5,39 @@
   <title>Portfolio | MM </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/scripts.js"></script>
+  <link href="styles/styles.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    /* Style the body */
-    body {
-      font-family: 'Dosis', sans-serif;
-      margin: 0;
-      background-color: white;
-      display: flex;
-      height: 100%;
-    }
-
-    /* Header/logo Title */
-    .header {
-      width: 50%;
-      height: 100%;
-      background-color: white;
-    }
-
-    .desc {
-      padding: 40px;
-      font-family: courier new, courier, monospace;
-      font-weight: 400;
-      font-display: swap;
-      -webkit-font-smoothing: subpixel-antialiased;
-      font-size: 1em;
-      line-height: 25px;
-    }
-
-
-    /* Main column */
-    .main {
-      width: 50%;
-      height: 100rem;
-      background-color: black;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      margin: 10px;
-    }
-
-    .name {
-      font-size: 30px;
-      text-transform: uppercase;
-      margin: 10px;
-    }
-
-    .project-number {
-      display: inline-block;
-      margin-right: 21px;
-      padding-right: 0px;
-    }
-
-    .text-block {
-      position: relative;
-      left: 70px;
-      bottom: -115px;
-      z-index: 7;
-      display: inline-block;
-      font-family: Rasa, sans-serif;
-      color: #4a5968;
-      font-size: 62px;
-      text-align: right;
-    }
-
-    .text-block-2 {
-      position: relative;
-      z-index: 4;
-      opacity: 0.21;
-      font-family: Rasa, sans-serif;
-      color: hsla(209.3333333333333, 51.72%, 82.94%, 1.00);
-      font-size: 98px;
-      font-weight: 700;
-      text-align: right;
-    }
-
-    .right {
-      float: right;
-    }
-
-    .hero-line1,
-    .hero-line2 {
-      padding-right: 5px;
-      padding-left: 5px;
-    }
-
-    .hero-text {
-      margin-top: 130px;
-    }
-
-    .button.see-more {
-      left: 45px;
-      top: 0px;
-      padding: 16px 32px;
-      align-self: center;
-      font-size: 16px;
-    }
-
-    .button {
-      position: relative;
-      top: 48px;
-      display: inline;
-      padding: 15px;
-      border: 3px solid #4a5968;
-      border-radius: 50px;
-      background-color: hsla(208.00000000000003, 82.57%, 57.25%, 0.00);
-      font-family: Lato, sans-serif;
-      color: #4a5968;
-      font-size: 18px;
-      font-weight: 700;
-      text-align: center;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    span {
-      background-color: #4a5968;
-    }
-    .certificates img {
-      height: 50px;
-      margin: 0 40px;
-      border-radius: 50px;
-      filter: grayscale(100%);
-    }
-    .certificates img:hover {
-      filter: grayscale(100%)invert(100%);
-    }
-
-    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 700px) {
-      .row {
-        flex-direction: column;
-      }
-    }
-
-    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-    @media screen and (max-width: 400px) {}
-  </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body>
-
-  <div class="header">
+  <div class="wrapper" id="1">
+  <div class="left-pane">
     <div class="project-number">
       <div class="text-block">01</div>
       <div class="text-block-2">01</div>
     </div>
-    <div class="desc">
+    <p class="desc">
       Software Developer with a history of working in the financial services industry and a Master's degree focused in
       Informatics from Hochschule RheinMain. Skilled in Vue.js, Requirements Analysis and Ruby on Rails.
+    </p>
+    <div class="download-files">
+      <a href="MARIA MAZUR_en.pdf" class="button" download>
+        <i class="fas fa-download"></i>
+        <span class="button-text">Download CV</span>
+      </a>
+      <a href="Mazur_Q_ITIL.pdf" class="button" download>
+        <i class="fas fa-download"></i>
+        <span class="button-text">Download ITIL</span>
+      </a>
     </div>
-    <div>
-      <a href="MARIA MAZUR_en.pdf" class="button see-more w-button" download>Download CV</a>
-    </div>
-      <div class="project-number">
-      <div class="text-block">02</div>
-      <div class="text-block-2">02</div>
-    </div>
-      <div class="desc">
-          My certificates.
-        </div>
-      <div class="certificates">
-          <a href="Mazur_Q_ITIL.pdf"  download>
-              <img  src="serveimage.jpeg">
-          </a>
-        </div>
+    <div class="circle-big"></div>
+    <div class="circle-small"></div>
   </div>
 
-  <div class="main">
+  <div class="right-pane">
     <div class="links right">
       <a href="https://www.instagram.com/yeheved/" target="_blank" class="social-link w-inline-block">
         <img src="./picto-instagram white.svg" alt="Link to my instagram account"></a>
@@ -190,5 +49,14 @@
       <h1 class="hero-line2"><span>I’m a Software Developer from Germany.</span></h1>
     </div>
   </div>
+  </div>
+  <div class="info" id="2">
+    <div class="project-number">
+      <div class="text-block">02</div>
+      <div class="text-block-2">02</div>
+    </div>
+    <div id="container"></div>
+  </div>
 </body>
+
 </html>
