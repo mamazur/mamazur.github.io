@@ -22,7 +22,7 @@ body {
 
 .right-pane {
   width: 50%;
-  background-color: black;
+  background: url(../img/stars.svg) repeat, #212135;
 }
 
 .desc {
@@ -31,6 +31,7 @@ body {
   font-weight: 400;
   line-height: 25px;
 }
+ 
 
 .links {
   display: flex;
