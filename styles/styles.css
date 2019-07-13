@@ -12,6 +12,8 @@ body {
 
 .wrapper{
   display: flex;
+  min-height: 500px;
+  height:auto;
 }
 
 .left-pane {
@@ -20,7 +22,6 @@ body {
 
 .right-pane {
   width: 50%;
-  height: 100vh;
   background-color: black;
 }
 
@@ -76,15 +77,16 @@ body {
   float: right;
 }
 
-.hero-line1,
-.hero-line2 {
-  padding-right: 5px;
-  padding-left: 5px;
+h1 span {
+  background-color: #4a5968;
 }
 
-.hero-text {
-  margin-top: 130px;
+.hero-line1{
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-top: 100px;
 }
+
 
 .button {
   display: inline;
@@ -102,14 +104,8 @@ body {
   align-self: center;
   font-size: 16px;
 }
-.button:hover{
-  background-color:  #ff9595;
 
-}
 
-h1 span {
-  background-color: #4a5968;
-}
 
 .fas.fa-download{
   display: none;
@@ -146,7 +142,7 @@ h1 span {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-#container{
+.container{
   background: #2b2b2b;
   height: 500px;
 }
