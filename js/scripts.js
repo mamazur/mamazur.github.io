@@ -5,10 +5,11 @@
   window.onload = init;
 
   function init() {
-    // the code to be called when the DOM has loaded #document has its nodes
-    var city = document.getElementById('city-name').textContent;
+    var city = document.getElementById('location').textContent || 'Mainz';
     getWeatherFromApi(city);
+    setCurrentTime();
     setInterval(setCurrentTime, 1000);
+    setInterval(setCity, 1000);
   }
 
 })(window, document, undefined);
@@ -37,14 +38,16 @@ function getWeatherFromApi(city) {
 
 function convertKelvinToCelsius(kelvin) {
   ZERO = 273.15;
-  if (kelvin < (0)) {
-    return 'below absolute zero (0 K)';
-  } else {
-    return (kelvin - ZERO).toFixed(1);
-  }
+  return kelvin < (0) ?  'below absolute zero (0 K)' : (kelvin - ZERO).toFixed(1);
+  
 }
 
 function setCurrentTime() {
   document.getElementById('city-time').textContent 
     = new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+}
+
+function setCity() {
+  var city = document.getElementById('location').value || 'Mainz';
+  document.getElementById('city-name').textContent = city;
 }

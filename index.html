@@ -58,12 +58,15 @@
       <div class="text-block">02</div>
       <div class="text-block-2">02</div>
     </div>
-    <span class="weather">
+    <p class="desc">
       <span id="city-name">Mainz</span>,
       <span id="city-time">04:49 PM</span>,
       <span id="city-temperature">16°C</span> 
       <span id="city-weather">Rain</span>
-    </span>
+      <br>
+      <input placeholder="Type location" type="text" autocomplete="off" id="location" 
+        oninput='getWeatherFromApi(this.value); setCity()' >
+    </p>
   </div>
   </div>
 </body>
