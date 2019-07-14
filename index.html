@@ -8,12 +8,16 @@
   <title>Portfolio | MM </title>
   
   <link href="styles/styles.css" rel="stylesheet">
+  <script src="js/scripts.js"></script>
   
   <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@6.0.0/dist/css/autoComplete.min.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@6.0.0/dist/js/autoComplete.min.js"></script>
 
-  <script src="js/scripts.js"></script>
+
 </head>
 
 <body>
@@ -48,8 +52,11 @@
         <a href="https://www.linkedin.com/in/maria-mazur-5730844b/" target="_blank" class="social-link w-inline-block">
           <img src="./picto-linkedin white.svg" alt="Link to my linkedin account"></a>
       </div>
-      <h1 class="hero-line1"><span>Hello, I'm Maria.</span></h1>
-      <h1 class="hero-line1"><span>I’m a Software Developer from Mainz.</span></h1>
+      <h1 class="hero-line1">
+        <span>Hello, I'm Maria.</span>
+        <br><br>
+        <span>I’m a Software Developer from Mainz.</span>
+      </h1>
     </div>
   </div>
   <div class="wrapper" id="id2">
@@ -64,14 +71,14 @@
       <span id="city-temperature">16°C</span> 
       <span id="city-weather">Rain</span>
       <br>
-      <input placeholder="Type location" type="text" autocomplete="off" id="location" 
-        oninput='getWeatherFromApi(this.value); setCity()' >
+      <input placeholder="Type location" type="text" autocomplete="off" id="autoComplete" tabindex="1" >
     </p>
   </div>
   <div class="right-pane stars">
 
   </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@6.0.0/dist/js/autoComplete.min.js"></script>
 </body>
 
 </html>
