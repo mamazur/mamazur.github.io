@@ -179,7 +179,7 @@ body {
   animation-timing-function: linear;
 }
 
-svg{
+#sky-clip > svg{
   mix-blend-mode: luminosity;
 }
 
