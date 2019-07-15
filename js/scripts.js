@@ -5,7 +5,7 @@
   function init() {
     var city = document.getElementById('autoComplete').textContent || 'Mainz';
     fetchWeatherFromApi(city);
-    setInterval(setCity, 1000);
+    setInterval(setCity, 2000);
   }
 })(window, document, undefined);
 
@@ -19,8 +19,8 @@ async function fetchWeatherFromApi(city) {
   .then(data => {
       setCountry(data.sys.country)
       setTemprature(data.main.temp)
-      setDate(data.dt - data.timezone);
-      addWeatherImage(data.weather[0].icon);
+      setDate(data.timezone);
+      addWeatherImage(data.weather[0]);
   })
   .catch(error => console.error(error));
 }
@@ -54,13 +54,13 @@ function convertKelvinToCelsius(kelvin) {
   return kelvin < (0) ?  `${kelvin} is < 0 K` : (kelvin - ZERO).toFixed(1);
 }
 
-function convertDate(date){
-  return new Date(date * 1000)
+function convertDate(timezone){
+  return new Date()
     .toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
 }
 
-function setDate(date){
-  document.getElementById('city-time').textContent = convertDate(date);
+function setDate(){
+  document.getElementById('city-time').textContent = convertDate();
 }
 
 function setCountry(country){
@@ -73,16 +73,13 @@ function setTemprature(temp){
 
 }
 
-function addWeatherImage(icon) {
+function addWeatherImage(weather) {
   let img = document.createElement('img');
-  let i = 0;
-  img.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+  img.src = `https://openweathermap.org/img/wn/${weather.icon}@2x.png`;
   container = document.getElementById('weather-img');
-  if (container.childElementCount > i) clearWeatherImage();
-  while ( i < 10) {
-    container.appendChild(img);
-    i += 1;
-  }
+  clearWeatherImage();
+  container.appendChild(img);
+  document.getElementById('city-weather').textContent = weather.main;
 }
 function clearWeatherImage() {
   container = document.getElementById('weather-img');
