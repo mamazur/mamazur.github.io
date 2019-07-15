@@ -2,21 +2,27 @@
   box-sizing: border-box;
 }
 
-/* Style the body */
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'MaisonNeue', sans-serif;
   margin: 0;
   background-color: white;
   height: 100%;
 }
 
+/*.container{
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(500px);
+  scroll-snap-type: y mandatory;
+} */
+
 .wrapper{
   display: flex;
   min-height: 500px;
-  height:auto;
+  height: auto;
+  scroll-snap-align: start;
 }
-
-
 
 .left-pane {
   width: 50%;
@@ -88,13 +94,14 @@ body {
   float: right;
 }
 
-h1 span {
-  background-color: #4a5968;
-}
-
 .whoami{
-  padding-right: 5px;
-  padding-left: 5px;
+  /* writing-mode: vertical-lr; */
+  font-weight: 700;
+  font-family: "MaisonNeue, sans-serif";
+  font-size: 8rem;
+  width: 13vw;
+  height: 13vw;
+  padding: 5px;
 }
 
 
@@ -124,7 +131,7 @@ h1 span {
   width: 35vw;
   height: 35vw;
   position: absolute;
-  background: linear-gradient(to bottom right, #ff9595, rgba(0, 0, 0, 0));
+  background:  linear-gradient(to bottom right, #ff9595, rgba(0, 0, 0, 0));
   z-index: -100;
   left: 25%;
   border-radius: 50%;

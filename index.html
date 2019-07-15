@@ -9,8 +9,7 @@
   
   <link href="styles/styles.css" rel="stylesheet">
   <script src="js/scripts.js"></script>
-  
-  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@6.0.0/dist/css/autoComplete.min.css">
@@ -21,6 +20,7 @@
 </head>
 
 <body>
+  <div class="container">
   <div class="wrapper" id="id1">
     <div class="left-pane">
       <div class="project-number">
@@ -28,7 +28,7 @@
         <div class="text-block-2">01</div>
       </div>
       <p class="desc">
-        Software Developer with a history of working in the financial services industry and a Master's degree focused in
+        I'am a software developer from Mainz with a history of working in the financial services industry and a Master's degree focused in
         Informatics from Hochschule RheinMain. Skilled in Vue.js, Requirements Analysis and Ruby on Rails.
       </p>
       <div class="download-files">
@@ -52,11 +52,25 @@
         <a href="https://www.linkedin.com/in/maria-mazur-5730844b/" target="_blank" class="social-link w-inline-block">
           <img src="./picto-linkedin white.svg" alt="Link to my linkedin account"></a>
       </div>
-      <h1 class="whoami y-margin">
-        <span>Hello, I'm Maria.</span>
-        <br><br>
-        <span>I’m a Software Developer from Mainz.</span>
-      </h1>
+      <div class="inverse">
+          <svg width="100%" height="100%" viewBox="0 0 270 270" id >
+              <defs>
+                <clipPath id="whoami">
+                  <text font-size="60"
+                        font-weight= "700"
+                        font-family="MaisonNeue, sans-serif">
+                        <tspan x="50" y="50">hello</tspan>
+                        <tspan x="16" y="140">I'm</tspan>
+                        <tspan x="11" y="200">Maria</tspan>
+                  </text>
+                </clipPath>
+              </defs>
+              <image xlink:href="img/black-start.svg" 
+                      x="0" y="0" 
+                      width="300" height="300" 
+                      clip-path="url(#whoami)" />
+              </svg>
+      </div>
     </div>
   </div>
   <div class="wrapper" id="id2">
@@ -121,7 +135,7 @@
           </p>       
       </div>
     </div>
-  
+    </div>
   <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@6.0.0/dist/js/autoComplete.min.js"></script>
 </body>
 
