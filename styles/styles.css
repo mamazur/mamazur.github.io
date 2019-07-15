@@ -33,6 +33,13 @@ body {
   line-height: 25px;
 }
  
+.inverse{
+  color: white;
+}
+
+.y-margin{
+  margin-top: 100px;
+}
 
 .links {
   display: flex;
@@ -83,10 +90,9 @@ h1 span {
   background-color: #4a5968;
 }
 
-.hero-line1{
+.whoami{
   padding-right: 5px;
   padding-left: 5px;
-  margin-top: 100px;
 }
 
 
@@ -106,8 +112,6 @@ h1 span {
   align-self: center;
   font-size: 16px;
 }
-
-
 
 .fas.fa-download{
   display: none;

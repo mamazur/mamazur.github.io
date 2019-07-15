@@ -52,7 +52,7 @@
         <a href="https://www.linkedin.com/in/maria-mazur-5730844b/" target="_blank" class="social-link w-inline-block">
           <img src="./picto-linkedin white.svg" alt="Link to my linkedin account"></a>
       </div>
-      <h1 class="hero-line1">
+      <h1 class="whoami y-margin">
         <span>Hello, I'm Maria.</span>
         <br><br>
         <span>I’m a Software Developer from Mainz.</span>
@@ -60,22 +60,63 @@
     </div>
   </div>
   <div class="wrapper" id="id2">
-  <div class="left-pane">
-    <div class="project-number">
-      <div class="text-block">02</div>
-      <div class="text-block-2">02</div>
+    <div class="left-pane">
+      <div class="project-number">
+        <div class="text-block">02</div>
+        <div class="text-block-2">02</div>
+      </div>
+      <p class="desc">
+        <span id="city-name">Mainz</span>
+        <span id="city-country">DE</span>,
+        <span id="city-time">04:49 PM</span>,
+        <span id="city-temperature">16°C</span>,
+        <span id="city-weather">Rain</span>
+        <br>
+        <input placeholder="Type location" type="text" autocomplete="off" id="autoComplete" tabindex="1" >
+      </p>
     </div>
-    <p class="desc">
-      <span id="city-name">Mainz</span>,
-      <span id="city-time">04:49 PM</span>,
-      <span id="city-temperature">16°C</span> 
-      <span id="city-weather">Rain</span>
-      <br>
-      <input placeholder="Type location" type="text" autocomplete="off" id="autoComplete" tabindex="1" >
-    </p>
+    <div class="right-pane">
+      <div class= "desc inverse y-margin">
+        A few years ago, the simple way to make an Ajax call was through the use of jQuery
+        or by manually creating XMLHttpRequest.
+        Nowdays modern browsers support Fetch API
+        a modern way make Ajax call without helper libraries like jQuery or Axios. 
+      </div>
+      <div id="weather-img"></div>
+    </div>
   </div>
-  <div class="right-pane" id="weather-img"></div>
-  </div>
+    <div class="wrapper" id="id3">
+      <div class="left-pane">
+        <div class="project-number">
+          <div class="text-block">03</div>
+          <div class="text-block-2">03</div>
+        </div>
+        <p class="desc">
+          
+        </p>
+      </div>
+      <div class="right-pane">
+          <p class="desc y-margin">
+            <svg width="100%" height="100%" viewBox="0 0 250 250">
+              <defs>
+                <clipPath id="sweetclip">
+                  <text font-size="80"
+                        font-weight= "700"
+                        font-family="MaisonNeue, sans-serif">
+                  <tspan x="38.5" y="80">clip</tspan>
+                  <tspan x="7" y="150">path</tspan>
+                  </text>
+                </clipPath>
+              </defs>
+              <image xlink:href="./img/sky.jpeg" 
+                      x="0" y="0" 
+                      width="300" height="300" 
+                      clip-path="url(#sweetclip)" />
+              </svg>
+            </p>       
+      </div>
+    </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@6.0.0/dist/js/autoComplete.min.js"></script>
 </body>
 
