@@ -19,7 +19,7 @@ async function fetchWeatherFromApi(city) {
   .then(data => {
       setCountry(data.sys.country)
       setTemprature(data.main.temp)
-      setDate(data.timezone);
+      //setDate(data.timezone);
       addWeatherImage(data.weather[0]);
   })
   .catch(error => console.error(error));
