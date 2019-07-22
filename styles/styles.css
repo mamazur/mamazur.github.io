@@ -197,8 +197,8 @@ circle:nth-of-type(4) {
 }
 
 blockquote{
-  margin:50px auto;
-  padding:1.2em 30px 1.2em 75px;
+  margin: 4em auto;
+  padding-left:1.2em;
   line-height:1.6;
   position: relative;
 }
@@ -208,8 +208,8 @@ blockquote::before{
   color:#ffffff;
   font-size:4em;
   position: absolute;
-  left: 10px;
-  top:-10px;
+  left: -0.5em;
+  top:-1em;
 }
 
 blockquote::after{
@@ -221,11 +221,10 @@ blockquote span{
   color:#333333;
   font-style: normal;
   font-weight: bold;
-  margin-top:1em;
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 1100px) {
-
   .download-files {
     display: flex;
     flex-direction: column;
@@ -233,7 +232,7 @@ blockquote span{
 
 }
 /* Responsive layout - when the screen is less than 900px wide */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .row {
     flex-direction: column;
   }
@@ -245,6 +244,7 @@ blockquote span{
   .fas.fa-download{
     display: inline;
   }
+
 }
 @keyframes move {
   0% {
