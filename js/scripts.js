@@ -1,9 +1,6 @@
-import fontawesome from "@fortawesome/fontawesome";
-import faFreeSolid from "@fortawesome/fontawesome-free-solid";
 import "regenerator-runtime/runtime";
 import '../scss/styles.scss'
-fontawesome.library.add(faFreeSolid);
-fontawesome.dom.i2svg();
+ 
 
 (function (window, document, undefined) {
 
