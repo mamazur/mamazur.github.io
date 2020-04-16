@@ -1,166 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Portfolio | MM </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head profile="http://www.w3.org/2005/10/profile">
+      <link rel="icon" 
+            type="image/ico" 
+            href="favicon.ico">
+ 
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
 
-  <title>Portfolio | MM </title>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+    <script src="js/scripts.js"></script>
+   
+  </head>
+ 
 
-  <link href="styles/styles.css" rel="stylesheet">
-  <link href="styles/animations.css" rel="stylesheet">
-  <script src="js/scripts.js"></script>
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@6.0.0/dist/css/autoComplete.min.css">
-
-</head>
-
-<body>
-  <div class="container">
-    <div class="wrapper" id="id1">
-      <div class="left-pane">
-        <div class="project-number">
-          <div class="text-block">01</div>
-          <div class="text-block-2">01</div>
-        </div>
-        <p class="desc">
-          I'am a software developer from Mainz with a history of working in the financial services industry and a
-          Master's degree focused in
-          Informatics from Hochschule RheinMain. Skilled in Vue.js, Requirements Analysis and Ruby on Rails.
-        </p>
-        <div class="download-files">
-          <a href="MARIA MAZUR_en.pdf" class="button" download>
-            <i class="fas fa-download"></i>
-            <span class="button-text">Download CV</span>
-          </a>
-          <a href="Mazur_Q_ITIL.pdf" class="button" download>
-            <i class="fas fa-download"></i>
-            <span class="button-text">Download ITIL</span>
-          </a>
-        </div>
-        <div class="circle-big"></div>
-      </div>
-
-      <div class="right-pane">
-        <div class="inverse" id="whoami-clip">
-          <svg width="100%" height="100%" viewBox="0 0 270 170" id>
-            <defs>
-              <clipPath id="whoami">
-                <text font-size="60" font-weight="700" font-family="MaisonNeue, sans-serif">
-                  <tspan x="57" y="72">hello</tspan>
-                  <tspan x="77" y="120">I'm</tspan>
-                  <tspan x="16" y="167">maria</tspan>
-                </text>
-              </clipPath>
-            </defs>
-            <image xlink:href="img/sky.jpg" x="0" y="0" width="300" height="300" clip-path="url(#whoami)" />
-          </svg>
-        </div>
-        <div class="links">
-          <a href="https://www.instagram.com/yeheved/" target="_blank" class="social-link w-inline-block">
-            <img src="./picto-instagram white.svg" alt="Link to my instagram account"></a>
-          <a href="https://www.linkedin.com/in/maria-mazur-5730844b/" target="_blank"
-            class="social-link w-inline-block">
-            <img src="./picto-linkedin white.svg" alt="Link to my linkedin account"></a>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper" id="id2">
-      <div class="left-pane">
-        <div class="project-number">
-          <div class="text-block">02</div>
-          <div class="text-block-2">02</div>
-        </div>
-        <p class="desc">
-          <span id="city-name">Mainz</span>
-          <span id="city-country">DE</span>,
-          <span id="city-temperature">16°C</span>,
-          <span id="city-weather">Rain</span>
+  <body>
+    <div class = "container">
+      <div class="wrapper" id="id1">
+        <div class="left-pane">
+          <div class="project-number">
+            <div class="text-block">01</div>
+            <div class="text-block-2">01</div>
+          </div>
+          <p class="desc" uk-scrollspy="cls: uk-animation-fade; delay: 150; repeat: true">
+            I'am a software developer from Mainz with a history of working in the financial services industry and a
+            Master's degree focused in
+            Informatics from Hochschule RheinMain. Skilled in Vue.js, Requirements Analysis and Ruby on Rails.
+          </p>
           <br>
-          <input placeholder="Type location" type="text" autocomplete="off" id="autoComplete" tabindex="1">
-        </p>
-      </div>
-      <div class="right-pane">
-        <div class="desc inverse y-margin">
-          A few years ago, the simple way to make an Ajax call was through the use of jQuery
-          or by manually creating XMLHttpRequest.
-          Nowdays modern browsers support Fetch API
-          a modern way make Ajax call without helper libraries like jQuery or Axios.
-        </div>
-        <div id="weather-img"></div>
-      </div>
-    </div>
-    <div class="wrapper" id="id3">
-      <div class="left-pane">
-        <div class="project-number">
-          <div class="text-block">03</div>
-          <div class="text-block-2">03</div>
-        </div>
-        <p class="desc">
-          Clip-path is a great CSS feature to define an image boundary.
-          Clipping is like cutting out a piece of paper with a pair of scissors.
-          Another useful property is mix-blend-mode,
-          which allows to blend content of the element
-          with the content or background of its direct parent
-        </p>
-      </div>
-      <div class="right-pane">
-        <p class="desc inverse" id="sky-clip">
-          <svg width="100%" height="100%" viewBox="0 0 270 270" id>
-            <defs>
-              <clipPath id="skyclip">
-                <text font-size="80" font-weight="700" font-family="MaisonNeue, sans-serif">
-                  <tspan x="40" y="80">mix</tspan>
-                  <tspan x="16" y="140">blend</tspan>
-                  <tspan x="11" y="200">mode</tspan>
-                </text>
-              </clipPath>
-            </defs>
-            <image xlink:href="img/sky.jpg" x="0" y="0" width="300" height="300" clip-path="url(#skyclip)" />
-          </svg>
-        </p>
-      </div>
-    </div>
-    <div class="wrapper" id="id4">
-      <div class="left-pane">
-        <div class="project-number">
-          <div class="text-block">04</div>
-          <div class="text-block-2">04</div>
-        </div>
-        <div class="desc">
-          <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
-            <circle cx="170" cy="170" r="160" stroke="#ff9595" fill="#212135" />
-            <circle cx="170" cy="170" r="135" stroke="#ffffff" fill="#212135" />
-            <circle cx="170" cy="170" r="110" stroke="#ff9595" fill="#212135" />
-            <circle cx="170" cy="170" r="85" stroke="#ffffff" fill="#212135" />
-          </svg>
-          <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
-            <circle cx="170" cy="170" r="160" stroke="#ff9595" fill="#212135" />
-            <circle cx="170" cy="170" r="135" stroke="#ffffff" fill="#212135" />
-            <circle cx="170" cy="170" r="110" stroke="#ff9595" fill="#212135" />
-            <circle cx="170" cy="170" r="85" stroke="#ffffff" fill="#212135" />
-          </svg>
-        </div>
-        <div id="container"></div>
-      </div>
-      <div class="right-pane">
-        <div class="desc inverse y-margin">
-          <blockquote>
-            CSS animations make it possible to animate transitions
-            from one CSS style configuration to another.
-            Animations consist of two components, a style describing
-            the CSS animation and a set of keyframes that indicate
-            the start and end states of the animation’s style,
-            as well as possible intermediate waypoints.
-          </blockquote>
+          <br>
+          <p   uk-scrollspy="cls: uk-animation-fade; delay: 300; repeat: true">
+            <a href="MARIA MAZUR_en.pdf" class="button" download>
+              <i class="fas fa-download"></i>
+              <span class="button-text">Download CV</span>
+            </a>
+            <a href="Mazur_Q_ITIL.pdf" class="button" download>
+              <i class="fas fa-download"></i>
+              <span class="button-text">Download ITIL</span>
+            </a>
+          </p>
+          <div class="circle-big"></div>
+          </div>
+  
+        <div class="right-pane">
+          <div  id="whoami-clip">
+            <svg width="100%" height="100%" viewBox="0 0 270 170" id>
+              <defs>
+                <clipPath id="whoami">
+                  <text font-size="60" font-weight="700" font-family="MaisonNeue, sans-serif">
+                    <tspan x="57" y="72">hello</tspan>
+                    <tspan x="77" y="120">I'm</tspan>
+                    <tspan x="16" y="167">maria</tspan>
+                  </text>
+                </clipPath>
+              </defs>
+              <image xlink:href="img/sky1.jpg" x="0" y="0" width="300" height="300" clip-path="url(#whoami)" />
+            </svg>
+          </div>
+          <div class="links">
+            <a href="https://www.instagram.com/yeheved/" target="_blank" class="social-link w-inline-block">
+              <img src="./picto-instagram white.svg" alt="Link to my instagram account"></a>
+            <a href="https://www.linkedin.com/in/maria-mazur-5730844b/" target="_blank"
+              class="social-link w-inline-block">
+              <img src="./picto-linkedin white.svg" alt="Link to my linkedin account"></a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@6.0.0/dist/js/autoComplete.min.js"></script>
-</body>
 
+      <div class="wrapper" id="id2">
+          <div class="project-number project-number-restricted">
+            <div class="text-block">02</div>
+            <div class="text-block-2">02</div>
+            <div  id="work-clip"  uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: true">
+              <svg width="100%" height="100%" viewBox="0 0 270 170" id>
+                <defs>
+                  <clipPath id="work">
+                    <text font-size="50" font-weight="700" font-family="MaisonNeue, sans-serif">
+                      <tspan x="57" y="72">work</tspan>
+                      <tspan x="77" y="100"> & play</tspan>
+                    </text>
+                  </clipPath>
+                </defs>
+                <image xlink:href="img/sky1.jpg" x="0" y="0" width="250" height="200" clip-path="url(#work)" />
+              </svg>
+            </div>
+            <p class="desc label" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: true">
+              sketch pencil aquarell fineliner  mixedmedia watercolor graphic brush
+            </p>
+          </div>
+            <div class="desc">
+              <div class="grid-collapse">
+                <div class="grid-img">
+                  <img src="img/COVER_001.jpg" width="300" height="300" alt="">
+                  <div class="overlay background-yellow">
+                    <div class="text">Hello Berry</div>
+                  </div>
+                </div>
+                <div class="grid-img">
+                  <img src="img/COVER_002.jpg" width="300" height="300" alt="">
+                </div>
+                <div class="grid-img ">
+                  <img src="img/COVER_003.jpg" width="300" height="300" alt="">
+                  <div class="overlay background-blue">
+                    <div class="text">Hello Cat</div>
+                  </div>
+                </div>
+                <div class="grid-img">
+                  <img src="img/COVER_004.jpg" width="300" height="300" alt="">
+                </div>
+                <div class="grid-img">
+                  <img src="img/COVER_005.jpg" width="300" height="300" alt="">
+                </div>
+                <div class="grid-img">
+                  <img src="img/COVER_006.jpg" width="300" height="300" alt="">
+                  <div class="overlay background-light-blue">
+                    <div class="text">Hello Plant</div>
+                  </div>
+                </div>
+                <div class="grid-img">
+                  <img src="img/COVER_007.jpg" width="300" height="300" alt="">
+
+                </div>
+                <div class="grid-img">
+                  <img src="img/COVER_008.jpg" width="300" height="300" alt="">
+                  <div class="overlay background-red">
+                    <div class="text">Hello Seed</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+
+      <div class="wrapper" id="id3">
+              <div class="project-number project-number-restricted">
+                <div class="text-block">03</div>
+                <div class="text-block-2">03</div>
+                <div  id="skills-clip"  uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: true">
+                  <svg width="100%" height="100%" viewBox="0 0 270 170" id>
+                    <defs>
+                      <clipPath id="skills">
+                        <text font-size="50" font-weight="700" font-family="MaisonNeue, sans-serif">
+                          <tspan x="57" y="72">skills</tspan>
+                        </text>
+                      </clipPath>
+                    </defs>
+                    <image xlink:href="img/sky1.jpg" x="0" y="0" width="250" height="200" clip-path="url(#skills)" />
+                  </svg>
+                </div>
+                <p class="desc label" uk-scrollspy="cls: uk-animation-fade; delay: 200; repeat: true">
+                  ruby on rails vue.js hyperapp.js JavaScript ES sass haml sapui5 parcel webpack 
+                </p>
+              </div>
+              <div class="desc" >
+                <img src="img/vue-logo.svg" alt="" style="height: 7rem;">
+                <img src="img/npm-logo.svg"  alt="">
+                <img src="img/rails-logo.svg" alt="">
+                <img src="img/js-logo.svg" alt="">
+                <img src="img/parcel-logo.svg"  alt=""style="height: 2rem;">
+                <img src="img/sass-logo.svg"  alt="">
+                <img src="img/openui5-logo.png"  alt="">
+                <img src="img/hyperapp-logo.svg" alt="">
+ 
+            </div>
+      </div>
+      <div class="wrapper footer" >© 2020 Maria Mazur</div>
+    </div>
+  </body>
 </html>

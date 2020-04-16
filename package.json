@@ -1,0 +1,27 @@
+{
+  "name": "mamazur.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel serve  index.html ",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamazur/mamazur.github.io.git"
+  },
+  "keywords": [],
+  "author": "Maria Mazur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mamazur/mamazur.github.io/issues"
+  },
+  "homepage": "https://github.com/mamazur/mamazur.github.io#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "regenerator-runtime": "^0.13.5"
+  },
+  "devDependencies": {
+    "sass": "^1.26.3"
+  }
+}
