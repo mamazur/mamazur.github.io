@@ -115,6 +115,20 @@ a:hover {
   align-self: center;
   font-size: 1rem;
 }
+.button-small {
+  display: inline;
+  padding: .4rem;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 2rem;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  align-self: center;
+  font-size: 1rem;
+}
 .project-number {
   margin: 30% 0 0;
 }
