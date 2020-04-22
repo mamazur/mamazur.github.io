@@ -96,6 +96,9 @@ body {
   flex-direction: column;
   padding: 2rem;
 }
+.links > a {
+  margin: .1rem;
+}
 .button,
 a:hover {
   color: #fff;
