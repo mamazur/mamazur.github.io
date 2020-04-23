@@ -1,32 +1,41 @@
 .background-yellow {
   background-color: #fbaf08;
 }
+
 .background-white {
   background-color: #fff;
 }
+
 .background-blue {
   background-color: #101357;
 }
+
 .background-light-blue {
   background-color: #00a0a0;
 }
+
 .background-green {
   background-color: #007f4f;
 }
+
 .background-red {
   background-color: #ff5e6c;
 }
+
 .background-black {
   background-color: #212135;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: auto;
   font-weight: 400;
   font-size: 1.3rem;
 }
+
 .menu {
   position: fixed;
   display: flex;
@@ -52,21 +61,24 @@ body {
   align-self: center;
   font-size: 0.8rem;
 }
+
 .menu-dark {
+  opacity: 0.5;
   background-color: #212135;
 }
+
 .container .wrapper {
   padding: 2rem;
 }
 .container .wrapper-yellow {
   color: #fff;
   display: flex;
-  background: url(../img/stars.svg)  repeat, #fbaf08;
+  background: url(../img/stars.svg) repeat, #fbaf08;
   opacity: 0.9;
 }
 .container .inverse {
   color: #fff;
-  background: url(../img/stars.svg)  repeat, #212135;
+  background: url(../img/stars.svg) repeat, #212135;
 }
 .container .inverse .uk-heading-bullet {
   color: #fff;
@@ -77,6 +89,7 @@ body {
   flex-direction: row-reverse;
   color: #fff;
 }
+
 .desc {
   margin: auto;
   width: 60%;
@@ -84,6 +97,7 @@ body {
 .desc p > img {
   height: 4rem;
 }
+
 .grid-collapse {
   max-width: 1200px;
   margin: 3rem;
@@ -91,19 +105,18 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .links {
   display: flex;
   flex-direction: column;
   padding: 2rem;
 }
-.links > a {
-  margin: .1rem;
-}
-.button,
+
 a:hover {
   color: #fff;
   text-decoration: none;
 }
+
 .button {
   display: inline;
   padding: 1rem;
@@ -111,27 +124,16 @@ a:hover {
   border: 3px solid #fff;
   border-radius: 2rem;
   font-family: Lato, sans-serif;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  align-self: center;
-  font-size: 1rem;
-}
-.button-small {
-  display: inline;
-  padding: .4rem;
-  border: 2px solid #fff;
   color: #fff;
-  border-radius: 2rem;
-  font-family: Lato, sans-serif;
   font-weight: 700;
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-decoration: none;
   align-self: center;
   font-size: 1rem;
 }
+
 .project-number {
   margin: 30% 0 0;
 }
@@ -146,8 +148,11 @@ a:hover {
   color: #e1e1e1;
   margin-left: 3rem;
 }
+
+/* Responsive layout */
 @media screen and (max-width: 900px) {
   .desc {
     width: 100%;
   }
 }
+ 

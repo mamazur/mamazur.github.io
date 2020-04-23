@@ -1,4 +1,4 @@
-//import "../scss/styles.scss";
+import "../scss/styles.scss";
 window.onscroll = function () {
   init();
 };
