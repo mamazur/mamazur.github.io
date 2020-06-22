@@ -2,7 +2,7 @@
   "name": "mamazur.github.io",
   "version": "1.0.0",
   "scripts": {
-    "dev": "parcel serve  index.html ",
+    "dev": "parcel serve  index.html -p 1111",
     "build": "parcel build index.html"
   },
   "repository": {
