@@ -5,10 +5,7 @@
     "dev": "parcel serve  index.html -p 1111",
     "build": "parcel build index.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mamazur/mamazur.github.io.git"
-  },
+  "repository": "git+https://github.com/mamazur/mamazur.github.io.git",
   "keywords": [],
   "author": "Maria Mazur",
   "license": "ISC",
@@ -17,12 +14,13 @@
   },
   "homepage": "https://github.com/mamazur/mamazur.github.io#readme",
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.8",
-    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "parcel": "^2.0.0-rc.0",
     "regenerator-runtime": "^0.13.5"
   },
   "devDependencies": {
+    "@parcel/transformer-image": "2.0.0-rc.0",
     "cssnano": "^4.1.10",
     "sass": "^1.26.3"
-  }
+  },
+  "main": "index.js"
 }
