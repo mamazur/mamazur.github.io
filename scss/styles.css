@@ -25,7 +25,7 @@ body {
 
 .wrapper-img {
   background-image:
-  linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(253,187,45,0) 40%),
+  linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(253,187,45,0) 50%),
   url("../img/UnfxFYFx.png");
   background-size: cover;
   color: #e5ddc8;
