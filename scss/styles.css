@@ -4,54 +4,66 @@
 
 body {
   margin: auto;
+  background-color: #fff;
+  color: #777;
   font-family: 'Roboto', sans-serif;
-  background-color: #f2e6d6;
-  color: #273e47;
+  font-weight: 300;
 }
 
 .container .wrapper {
   padding: 2rem;
+  margin: auto;
 }
-.container .wrapper-yellow {
-  color: #e5ddc8;
-  background-color: #01949a;
+.restrict {
+  max-width: 900px;
+  text-align: center;
+} 
+
+.wrapper h2{
+  text-align: center;
 }
 
-.container .inverse {
+.wrapper-img {
+  background-image:
+  linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(253,187,45,0) 40%),
+  url("../img/UnfxFYFx.png");
+  background-size: cover;
   color: #e5ddc8;
-  background-color: #004369;
 }
 
-.project-number {
-  margin: 30% 0 0;
-  color: #e5ddc8;
+.wrapper-img .project-number {
+  margin: 10% 20% 20%;
 }
-.project-number .text-block-2 {
+.wrapper-img .project-number {
   line-height: 4rem;
+  font-family: 'Roboto', sans-serif;
   font-size: 5rem;
   font-weight: 700;
 }
-.project-number .text-sift {
-  margin-left: 3rem;
-}
 
-.desc {
-  width: 60%;
-}
-.desc p > img {
-  height: 2rem;
-}
-
-a:hover {
+.wrapper-img .project-number a, a:hover {
   color: #e5ddc8;
   text-decoration: none;
 }
 
 
+.pure-g .pure-u-1-3{
+  background: #fafafa;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Responsive layout */
 @media screen and (max-width: 900px) {
-  .desc {
-    width: 100%;
+  .wrapper-img .project-number  {
+    margin: 15% 0 15%;
+    font-size: 4rem;
+    line-height: 3rem;
   }
+  .restrict {
+    max-width: none;
+  } 
 }
  
