@@ -18,12 +18,12 @@ body {
 .header__wrapper {
   align-items  : center;
   border-bottom: 1px solid #e3e4eb;
-  background: linear-gradient(110deg, #fdcd3b 60%, #5ac8fa 60%);
-  /* background-image:
+  /* background: linear-gradient(110deg, #fdcd3b 60%, #5ac8fa 60%); */
+  background-image:
     radial-gradient(ellipse at bottom left, rgba(0, 163, 203, 1) 40%, rgba(0, 163, 203, 0) 40%),
     radial-gradient(ellipse at top right, rgba(0, 163, 203, 1) 30%, rgba(0, 163, 203, 0) 30%),
     linear-gradient(to right, #fdcd3b 0%, #fdcd3b 33%, #5ac8fa 33%, #5ac8fa 66%, rgba(228, 145, 41, 1) 66%);
-  background-size: 50% 100%; */
+  background-size: 50% 100%;
 }
 
 .header__wrapper-content {
@@ -38,19 +38,23 @@ body {
   font-size       : 10rem;
   font-weight     : 400;
   color           : white;
-  padding         : 10% 10% 5% 10%;
+  padding         : 10% 10% 0 10%;
   position        : relative;
   text-size-adjust: 100%;
 }
 
-.header__wrapper-menu {
-  color     : white;
-  font-size : 2rem;
-  text-align: right;
-  padding   : 1% 0;
-  ;
-  max-width: 100vw;
+.header__wrapper-subtitle {
+  display         : block;
+  font-family     : 'Roboto';
+  line-height     : 90%;
+  font-size       : 2rem;
+  font-weight     : 400;
+  color           : white;
+  padding         : 2% 10% 5% 10%;
+  position        : relative;
+  text-size-adjust: 100%;
 }
+ 
 
 .header__wrapper-text {
   color       : #fff;
@@ -59,7 +63,14 @@ body {
   padding     : 0 10% 5% 10%;
 }
 
-
+ div.header__wrapper-text > a{
+ line-height: 35px;
+  color       : #fff;
+}
+.main_wrapper{
+  max-width: 1250px;
+  margin:auto;
+}
 .cards {
   display              : grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -156,4 +167,20 @@ body {
 .footer_wrapper {
  padding:  1%;;
   text-align: right;
+  color: #868a93;
 }
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .header__wrapper-title {
+    font-size       : 5rem;
+  }
+
+  .header__wrapper-text {
+
+    column-count: 1;
+ 
+  }
+} 
