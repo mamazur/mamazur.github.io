@@ -8,15 +8,24 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Every element with an ID has a scroll margin so the anchored elements are not cut off */
+[id] {
+  scroll-margin-top: 48px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family     : 'Inter', sans-serif;
+  font-family     : 'Montserrat', sans-serif;
   font-style      : normal;
-  font-weight     : 100;
-  font-size       : 0.8rem;
+  font-weight     : 500;
+  font-size       : 0.7rem;
   margin          : auto;
   background-color: var(--background-color);
   height          : 100%;
