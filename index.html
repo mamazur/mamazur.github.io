@@ -8,147 +8,71 @@
   <link href="styles/styles.css" rel="stylesheet">
   <link href="styles/basic.css" rel="stylesheet">
   <link href="styles/animations.css" rel="stylesheet">
+  <link href="styles/navigation.css" rel="stylesheet">
   <script src="js/scripts.js"></script>
 
 </head>
 
 <body>
-  <div class="wrapper" id="id1">
-    <div class="left-pane">
-      <div class="project-number">
-        <div class="text-block">01</div>
-        <div class="text-block-2">01</div>
-      </div>
-      <p class="desc">
-        I am currently working as a <strong>software developer in a SCRUM team</strong> responsible for
-        online advertising platform
-        solution. Team is developing an in-house cloud hosted applications using node.js and Elixir. In the past few
-        years I have worked mostly with dockerized application written in <strong>Node.js, Ruby on Rails, Vue.js and
-          Elixir on </strong>AWS
-        infrustructure.
-        <br>
-        <br>
-        I have also gathered experience in <strong>large enterprise projects</strong>
-        while working as <strong>technical consultant</strong> in the area
-        of customer communication services, as well as a development consultant for
-        <strong> SAP projects</strong>
-        creating custom
-        tailored web based user portals.
-        <br>
-        <br>
-        Having worked for various companies with international teams have shown me a crucial
-        importance of open and proactive communication for the successful completion of a project.
-        <br>
-        <br>
-        <a href="./cv.html" target="_blank" class="button">
-          CV</a>
-      </p>
+  <nav class="label-large">
+    <div> <a href="https://www.instagram.com/yeheved/" target="_blank">
+        <img src="./img/picto-instagram white.svg" alt="Link to my instagram account"></a>
+      <a href="https://www.linkedin.com/in/maria-mazur-5730844b/" target="_blank">
+        <img src="./img/picto-linkedin white.svg" alt="Link to my linkedin account"></a>
+    </div>
+    <span id="topNav" class="nav-closed">
+      <a href="./index.html">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">CV</a>
+    </span>
+    <a href="javascript:void(0);" class="mobile-menu-icon" onclick="toggleMobileNav()">
+      <span id="topNavMobileToggle" class="material-icons"><img id="menuImg" src="img/style/menu.svg"></span>
+    </a>
+  </nav>
+  <div class="container" id="id1">
 
+    <p class="desc">
+      <br>
+      software developer living in Munich, Germany. <br>
+      computer scientist | art lover | feminist | vegetarian | book addict
+    </p>
+
+
+
+    <div class="container__works--image-box desc">
+      <img src="./img/portfolio_hebamme.png" onclick="toggleModal(this)" class="has-modal">
+      <ul>
+        <li>Site :https://www.hebamme.me/</li>
+        <li>JAHR: 2022</li>
+        <li>Description: Rebranding and refactoring of a personal website for midfiwe services</li>
+        <li>Technology: IONOS website creation kit, HTML, CSS</li>
+      </ul>
+      <img src="./img/portfolio_vasilberela.png" onclick="toggleModal(this)" class="has-modal">
+      <dl>
+        <dt>Site</dt>
+        <dd>https://www.vasilberela.de//</dd>
+        <dt>JAHR</dt>
+        <dd>2022 </dd>
+        <dt>Description</dt>
+        <dd>Rebranding and refactoring of an artists portfolio</dd>
+        <dt>Technology</dt>
+        <dd>HTML, CSS, JS</dd>
+      </dl>
     </div>
 
-    <div class="right-pane">
-      <div class="inverse" id="whoami-clip">
-        <svg width="100%" height="100%" viewBox="0 0 270 170" id>
-          <defs>
-            <clipPath id="whoami">
-              <text font-size="60" font-weight="700" font-family="MaisonNeue, sans-serif">
-                <tspan x="57" y="72">hello</tspan>
-                <tspan x="77" y="120">I'm</tspan>
-                <tspan x="16" y="167">maria</tspan>
-              </text>
-            </clipPath>
-          </defs>
-          <image xlink:href="img/sky.jpg" x="0" y="0" width="300" height="300" clip-path="url(#whoami)" />
-        </svg>
-      </div>
-      <p class="desc inverse">
-        <a href="https://www.instagram.com/yeheved/" target="_blank">
-          <img src="./img/picto-instagram white.svg" alt="Link to my instagram account"></a>
-        <a href="https://www.linkedin.com/in/maria-mazur-5730844b/" target="_blank">
-          <img src="./img/picto-linkedin white.svg" alt="Link to my linkedin account"></a>
 
-        <br>
-        software developer living in Munich, Germany. <br>
-        computer scientist | art lover | feminist | vegetarian | book addict
-      </p>
-    </div>
-  </div>
-  <div class="wrapper" id="id2">
-    <div class="left-pane">
-      <div class="project-number">
-        <div class="text-block">02</div>
-        <div class="text-block-2">02</div>
-      </div>
-      <div class="container__works--image-box desc">
-        <img src="./img/portfolio_hebamme.png" onclick="toggleModal(this)" class="has-modal">
-        <dl>
-          <dt>Site</dt>
-          <dd>https://www.hebamme.me/</dd>
-          <dt>JAHR</dt>
-          <dd>2022 </dd>
-          <dt>Description</dt>
-          <dd>Rebranding and refactoring of a personal website for midfiwe services</dd>
-          <dt>Technology</dt>
-          <dd>IONOS website creation kit, HTML, CSS</dd>
-        </dl>
-        <img src="./img/portfolio_vasilberela.png" onclick="toggleModal(this)" class="has-modal">
-        <dl>
-          <dt>Site</dt>
-          <dd>https://www.vasilberela.de//</dd>
-          <dt>JAHR</dt>
-          <dd>2022 </dd>
-          <dt>Description</dt>
-          <dd>Rebranding and refactoring of an artists portfolio</dd>
-          <dt>Technology</dt>
-          <dd>HTML, CSS, JS</dd>
-        </dl>
-      </div>
-
-    </div>
-    <div class="right-pane">
-
-      <div class="title" id="sky-clip">
-        <div class="text-block">selected</div>
-        <div class="text-block-2">projects</div>
-      </div>
-      <div class="desc inverse">
-        <strong>Performance Optimization:</strong>
-        Improving performance of a Ruby on Rail legacy app by upgrading to Rails 5.
-        Replacing the client sided pagination, eliminating the deeply nested views and heavy JS styling libraries and
-        switching to websockets
-        <br>
-        <br>
-        <strong>Company Page Redesign:</strong>
-        Going away from a Rails monolith approach — extracted the frontend part to a fully responsive Vue.js app with
-        headless CMS for easy and intuitive text editing by department stuff.
-        <br>
-        <br>
-        <strong>Process Validation:</strong>
-        Speeding up UI/UX work by setting an underlying data structure and reusable components in SAP BUILD.me
-        prototype.
-        Ensuring team internal knowledge consistency and flow, through documentation, tooling and knowledge transfer
-      </div>
-    </div>
-  </div>
 
   </div>
 
-  <div class="wrapper" id="id3">
-    <div class="left-pane">
-      <div class="project-number">
-        <div class="text-block">03</div>
-        <div class="text-block-2">03</div>
-      </div>
 
+  <div id="imgModal" class="closed">
+    <span class="material-icons icon-button" onclick="toggleModal()">close</span>
+    <img src="" alt="" class="full-padding" />
+  </div>
+  <footer>
+    @maria-mazur - 2022
 
-    </div>
-    <div class="right-pane">
-
-    </div>
-    <div id="imgModal" class="closed">
-      <span class="material-icons icon-button" onclick="toggleModal()">close</span>
-      <img src="" alt="" class="full-padding" />
-    </div>
+  </footer>
 </body>
 
 </html>

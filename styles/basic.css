@@ -80,3 +80,8 @@ img.has-modal {
 #imgModal.closed {
   display: none;
 }
+
+a {
+  text-decoration: none;
+  color          : var(--surface-color);
+}

@@ -1,0 +1,117 @@
+/* footer */
+footer,
+.label-large {
+    padding    : 1rem;
+    display    : flex;
+    font-family: 'Inter', sans-serif;
+}
+
+footer {
+    justify-content: space-between;
+    flex-direction : row;
+}
+
+.footer__right,
+.footer__left {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+}
+
+.header__right>i.fa-solid {
+    padding: 5px;
+}
+
+.footer__right>div>a>i {
+    transform: rotate(-45deg);
+}
+
+.footer__right>div,
+.footer__left {
+    font-size: .8rem;
+}
+
+.footer__right>div,
+.footer__left>div {
+    text-transform: uppercase;
+    margin-right  : 1rem;
+    font-style    : normal;
+    font-weight   : normal;
+    line-height   : 1rem;
+}
+
+nav {
+    position       : sticky;
+    top            : 0;
+    display        : flex;
+    align-items    : center;
+    padding        : 0;
+    justify-content: flex-end;
+    height         : auto;
+    min-height     : 56px;
+    max-width      : 100%;
+    flex-direction : column;
+
+    background: var(--surface-color);
+    z-index   : 9999;
+}
+
+nav a {
+    width      : auto;
+    color      : var(--background-color);
+    margin-left: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color          : var(--secondary);
+}
+
+nav a:active {
+    text-decoration: underline;
+}
+
+nav .nav-closed a {
+    display: inline-block;
+}
+
+nav .mobile-menu-icon {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    nav {
+        padding: 0 1rem;
+    }
+
+    nav a {
+        max-height     : 48px;
+        min-width      : 48px;
+        padding        : 12px 0;
+        margin-right   : 16px;
+        width          : calc(100vw - 16px);
+        text-align     : right;
+        justify-content: center;
+        display        : inline-block;
+    }
+
+    nav .mobile-menu-icon {
+        display: block;
+    }
+
+    /* Hide all links despite the icon on mobile*/
+    nav .nav-closed a {
+        display: none;
+    }
+
+    nav .nav-open a {
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    .footer__right>div,
+    .footer__left {
+        font-size: .4rem;
+
+    }
+}
