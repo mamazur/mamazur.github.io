@@ -1,12 +1,22 @@
-import "../scss/styles.scss";
-window.onscroll = function () {
-  init();
-};
-function init() {
-  let menu = document.getElementById("menu");
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    menu.classList.add("menu-dark");
+/* Image modal */
+function toggleModal(img) {
+  let modal = document.getElementById('imgModal')
+  if (modal.classList.contains('closed')) {
+    modal.classList.remove('closed')
+    modal.scrollTo(0, 0)
+    modal.children.item(1).src = img.src
+    modal.children.item(1).alt = img.alt
   } else {
-    menu.classList.remove("menu-dark");
+    modal.classList.add('closed')
+  }
+}
+
+/* Close Image modal by using ESC aswell */
+document.addEventListener('keydown', closeModalWithESC);
+
+function closeModalWithESC(e) {
+  let modal = document.getElementById('imgModal')
+  if (e.keyCode == 27 && !modal.classList.contains('closed')) {
+    modal.classList.add('closed')
   }
 }

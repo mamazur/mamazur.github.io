@@ -1,0 +1,87 @@
+:root {
+  --primary          : #bc8585;
+  --primary-variant  : #c95d73;
+  --secondary        : #4a5968;
+  --secondary-variant: #09868f;
+  --surface-color    : #212135;
+  --background-color : #f6f7ff;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Every element with an ID has a scroll margin so the anchored elements are not cut off */
+[id] {
+  scroll-margin-top: 48px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family     : 'Montserrat', sans-serif;
+  font-style      : normal;
+  font-weight     : 500;
+  font-size       : 0.7rem;
+  margin          : auto;
+  background-color: var(--background-color);
+  height          : 100%;
+}
+
+dl {
+  display       : grid;
+  font-style    : normal;
+  font-weight   : 100;
+  font-size     : 0.8rem;
+  text-transform: uppercase;
+  line-height   : 133%;
+
+}
+
+dt {
+  grid-column-start: 1;
+}
+
+dd {
+  grid-column-start: 2;
+  opacity          : 0.4;
+}
+
+/* Image modal */
+img.has-modal {
+  cursor: pointer;
+}
+
+#imgModal {
+  position        : fixed;
+  height          : 100%;
+  width           : 100%;
+  top             : 0;
+  left            : 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align      : center;
+}
+
+#imgModal .icon-button {
+  right: calc(5vw);
+  top  : 8px;
+}
+
+#imgModal img {
+  max-height   : calc(90vh);
+  margin-top   : 10%;
+  border-radius: 15px;
+  ;
+}
+
+#imgModal.closed {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color          : var(--surface-color);
+}

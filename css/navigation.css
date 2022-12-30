@@ -1,0 +1,52 @@
+.header {
+    background: url("../img/dots.svg") repeat-y;
+}
+
+.header>.menu {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid var(--black);
+}
+
+.menu a img {
+    height: 2rem;
+    margin: .5rem .9rem 0;
+}
+
+.menu>.menu_projects {
+    text-transform: uppercase;
+    padding: .7rem;
+    border-right: 1px solid var(--black);
+    color: var(--black);
+}
+
+.menu a:hover {
+    background-color: var(--gray);
+}
+
+.header__title {
+    display: flex;
+}
+
+.header__title>.subtitle {
+    font-size: 0.8rem;
+    text-align: right;
+    margin-left: 2rem;
+    margin-top: .7rem;
+}
+
+footer {
+    display: flex;
+    padding: .5rem;
+    border-top: 1px solid var(--black);
+    color: var(--gray-variant);
+    justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    .header__title {
+        flex-direction: column;
+    }
+}
