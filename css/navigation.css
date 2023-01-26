@@ -23,11 +23,13 @@
 }
 
 .menu a:hover {
-    background-color: var(--gray);
+    color: var(--gray);
 }
 
 .header__title {
     display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--black);
 }
 
 .header__title>.subtitle {
@@ -41,8 +43,10 @@ footer {
     display: flex;
     padding: .5rem;
     border-top: 1px solid var(--black);
-    color: var(--gray-variant);
+    color: var(--white);
+    background-color: var(--black);
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 @media (max-width: 576px) {

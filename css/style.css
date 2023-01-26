@@ -1,12 +1,12 @@
 :root {
-  --primary: #603BCA;
+  --primary: #faa307;
   --primary-variant: #b388eb;
   --secondary: #DBFF00;
   --background: #f6f7ff;
   --black: #0B0C0E;
   --white: #ffffff;
-  --gray: #b7b7b7;
-  --gray-variant: #848484;
+  --gray: #C7D0D9;
+  --gray-variant: #8e9aaf;
 }
 
 /* text */
@@ -23,7 +23,7 @@
 }
 
 .gray-text {
-  color: var(--gray) !important;
+  color: var(--gray-variant) !important;
 }
 
 .white-text {
@@ -71,12 +71,18 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   margin: auto;
-  max-width: 1120px;
-  background: var(--background);
+  background: var(--white);
   color: var(--black);
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+section {
+  max-width: 1120px;
+  margin: auto;
+  height: 100%;
+}
 
 h1 {
   font-family: 'Montserrat';
@@ -91,7 +97,7 @@ h2 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 2.3rem;
+  font-size: 2rem;
   line-height: 3rem;
   letter-spacing: -0.015em;
   margin: 0;
@@ -124,28 +130,27 @@ p {
 .label {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
   font-size: 1rem;
   line-height: 150%;
   letter-spacing: -0.015em;
 }
 
 .title {
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 900;
-  font-size: 9rem;
-  line-height: 110%;
-  text-transform: uppercase;
-  text-shadow: -10px 0 var(--secondary);
-  margin-right: 1rem;
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 150%;
+  letter-spacing: -0.015em;
+  flex-grow: 2;
 }
 
 .primary-shadow {
-  text-shadow: -10px 0 var(--primary) !important;
+  text-shadow: -3px 0 var(--gray) !important;
 }
+
 .primary-variant-shadow {
-  text-shadow: -10px 0 var(--primary-variant) !important;
+  text-shadow: -5px 0 var(--primary-variant) !important;
 }
 
 /* *:not(.header__title)>.title:hover {
