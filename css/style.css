@@ -1,7 +1,7 @@
 :root {
   --primary: #faa307;
   --primary-variant: #b388eb;
-  --secondary: #DBFF00;
+  --secondary: #ebff7b;
   --background: #f6f7ff;
   --black: #0B0C0E;
   --white: #ffffff;
@@ -81,7 +81,6 @@ body {
 section {
   max-width: 1120px;
   margin: auto;
-  height: 100%;
 }
 
 h1 {
