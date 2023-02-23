@@ -82,8 +82,15 @@
     margin-right: 1rem;
 }
 
+.margin-2rem-b {
+    margin-bottom: 2rem;
+}
+
 .margin-2rem-t {
     margin-top: 2rem;
+}
+.margin-5rem-t {
+    margin-top: 5rem;
 }
 
 .quote {

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Maria Mazur </title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/navigation.css" rel="stylesheet">
+  <link href="css/container.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <link rel="icon" type="image/ico" href="favicon.ico">
+</head>
+
+<body>
+  <div class="header">
+    <div class="menu">
+      <a class="menu_projects label" href="./index.html"> Home</a>
+      <a class="menu_projects label" href="./cv.html"> CV</a>
+    </div>
+    <div class="header__title padding-1rem">
+      <div class="title">
+        master's thesis
+      </div>
+      <p class="subtitle">
+        software developer living in Munich, Germany. <br>
+        art & books lover | feminist | vegetarian <br>
+      </p>
+    </div>
+  </div>
+  <section class="margin-1rem-b padding-1rem border-l">
+
+    <h2>Reactive Web Technology for Student Management Systems</h2>
+    <h3>Motivation:</h3>
+    <p>
+      The master thesis analyses the existing implementation of the student management software system Admin on Rails
+      (AoR)
+      and evaluates the performance impact of two reactive web technologies on existing software modules:
+    </p>
+    <ul>
+      <li>CSS Grid Layout</li>
+      <li>WebSockets</li>
+    </ul>
+
+    <h3>Goal:</h3>
+    <ul>
+      <li>Evaluate both reactive technologies</li>
+      <li>Evaluate performance impact for both of them</li>
+      <li>Create o working prototype</li>
+    </ul>
+
+    <h3>Project Scope</h3>
+    <p>
+      The past decade has seen a rapid growth in the area of web development in terms of flexibility, scalability and
+      improvement of user experience. While the nature of web applications provides the opportunity to expose end users
+      to the newest features in a very timely manner, most of the improvements, however, are taken by them for granted.
+      For web developers, on the other hand, this time has been unprecedentedly challenging with respect to both new and
+      existing projects.</p>
+    <p>While some authors focus more on design aspects and others on market trends, they all have named Ruby on Rails
+      5, WebSockets and CSS Grid Layout, as eminent trends in 2017.</p>
+    <p>
+      The work had to be carried out in the following steps:</p>
+    <ul>
+      <li>Get to know CSS Grid Layout and WebSockets as technologies to be investigated.
+      </li>
+      <li>Evaluate their problem solving potential with regard to AoR.</li>
+      <li>Minimize maintenance costs and code redundancy</li>
+    </ul>
+    <h3>Lessons Learned:</h3>
+    <p>One important AoR aspect is the significantly and frequently changing number of involved developers. This web
+      application served the entire time as a platform for various student projects, resulting in a complex structure
+      and different development approaches.</p>
+    <p>The postitve outcome was the opportunity of students to co-develop an application they
+      can rely to as user. The contribution of each person was desired and validated. However, the
+      performance was mainly based on the outcome and the development cycle lacked review rounds of peers or professors.
+    </p>
+    <p>
+      In my oppition, the academic environment in Germany provides a variety of interesting and novel topics to work on,
+      but lucks one very essential aspect: the modern collaboration technics used in the enterprise world to ensure the
+      continous knowledge transfere and code quality.
+    </p>
+    <p>That is why the most importnat lesson learned for me, was to decline an offer of a PhD position and further
+      pursue my carrier in the enterprise world.</p>
+
+    <h3>What is Admin on Rails </h3>
+    <p>
+      AoR is a web-based application written in Ruby on Rails for the administration of study courses in the Computer
+      Science faculty at the RheinMain University of Applied Sciences. This application originated in the year 2009 as a
+      useful one- man project for small organisational tasks and evolved quickly into one of the most important
+      multi-purpose tools. The tasks performed by AoR include course assignment, room reservation, planning and course
+      scheduling, as well as exams and thesis announcements. The first version of AoR was implemented in Rails 3 and
+      Ruby 1.9. During recent years, the project was migrated to Rails 4.2 and Ruby 2.0 and subsequently to Rails 5 and
+      Ruby 2.3 to make use of all new features of the Rails framework. </p>
+    <p>
+      AoR is designed as a university based internal tool for administration tasks. Therefore the majority of AoR
+      related terminology comes from the realm of education. The major processes covered by the tool are not limited to
+      one particular university, but are universally known and used. The field of application is for now limited to the
+      Computer Science faculty. The tool supports all computer science degree programs, which are referred internally as
+      course programs. Another commonly used definition is term which covers summer and winter terms and describes the
+      period of time between breaks where courses are offered.
+    </p>
+    <p>My work was focused on two AoR modules - the plans and the assignments modules. </p>
+    <h4>Plans Module</h4>
+    <div class="container__flex">
+
+      <img src="./img/projects/image_phase2.png" style="height:300px;padding:1rem;">
+      <img src="./img/projects/image_grid_modelling.png" style="height:300px;padding:1rem;">
+    </div>
+    <p>There are several timetable visualisation techniques used in AoR, each one serving a different
+      purpose: (1) a JavaScript-based editor for timetable creation by administration staff, (2) a JavaScript-based view
+      available for students during the assignment phase, (3) a PDF-based view to print timetables, and finally (4) an
+      HTML-based table for the general overview. Besides the unavoidable redundancy in code, each technology requires a
+      different algorithmic approach.</p>
+    <h4>Assignment Module</h4>
+    <p>The assignments module handles the course assignments for the students. For each course, students can select
+      whether they want to attend the entire study module, or only lectures, practical courses, tutorials or seminars.
+      Also, the selection is based on a progress regulation, meaning that already completed courses are not offered, and
+      that advanced courses are only offered to students fulfilling specific formal requirements. After the assignment
+      phase is completed, the students can find a link to their personal timetable in PDF, HTML or iCalendar format.</p>
+    <h3>Project walk through </h3>
+    <p>First I have analyzed four different timetable visualisation techniques used in AoR: (1) a
+      JavaScript-based editor for timetable creation by administration staff, (2) a JavaScript-based view available for
+      students during the assignment phase, (3) a PDF-based view to print timetables, and finally (4) an HTML-based
+      table for the general overview. Each solution provides a different output and uses a different algorithmic
+      approach.</p>
+    <p>As the next step - I verified every solution </p>
+    <ul>
+      <li>The first controversial point in the JavaScript solution lies in its nature. As a stand alone implementation,
+        it certainly has its justification, but being part of a Rails application, a degree of caution is in order.
+        Without any doubt, the amount of business logic requirements always results in complicated code, but in this
+        case, the capacities of the Rails framework have not been fully exploited.</li>
+      <li>All in all, the described solution certainly performs it’s task. Unfortunately, the code is not easy to
+        maintain, due to its complexity and the violation of Rails conventions in the AoR application. This also results
+        in functional redundancy and low scalability.</li>
+      <li>PDF generated solution follows the typical Rails pattern of modularisation and splitting the responsibilities
+        between
+        model, controller and view. Another important part is the outsourcing of time based calculations in a special
+        library called timetable. This library provides important methods to determine the maximal amount of parallel
+        courses per week and the sorting algorithms for the courses. In this case, the developer is able to quickly find
+        out the location of information. The controller, model and library are well structured and follow proper Rails
+        naming conventions.</li>
+      <li>The functional part of the assignments module shows an interesting workaround to simulate real-time
+        functionality. This approach proved itself problematic in production environment. The number of unnecessary
+        client requests and demanding database queries result in poor performance and a low degree of end user
+        satisfaction.</li>
+    </ul>
+
+    <p>
+      I have evaluated the two new technologies used in this thesis, CSS Grid Layout and WebSockets, based on the
+      following criteria:
+    </p>
+    <ul>
+      <li>Performance improvements</li>
+      <li>User Satisfaction</li>
+      <li>Increased Readability of the Code</li>
+      <li>Testing</li>
+      <li>Technology Evaluation and Integration</li>
+    </ul>
+    <p>My experience with CSS Grid Layout was altogether positive. I have discovered only two compatibility
+      issues. To be able to apply the CSS Grid library and ensure testing coverage, one should migrate the application
+      to Rails 5.1 to solve the issues with Sass preprocessor support. The other issue is the PDF rendering. Currently,
+      we are not able to replace the PRAWN-based implementation with a CSS Grid-based one. Also, as the test have shown,
+      the PDF rendering
+      with the Wicked PDF Plug-in takes almost a factor of 1.5 more time than the current PRAWN - based implementation.
+      Apart of this, the CSS Grid library is very suitable for our application needs. As our implementation has shown,
+      we can unify all timetables based mainly on one CSS and one JavaScript file. To simplify the implementation of the
+      view even further, we advise to consider to move code from the view to the partial to reduce complexity and
+      redundancy.</p>
+    <p>
+      ActionCable is a much more complex topic. It is concerned with a backend and integration failures can have more
+      severe consequences. In this case, there is even less literature available. The Google search engine returns
+      436,000 results when looking for CSS Grid and only 119,000 results for ActionCable. We can rely on an online book
+      by Hartl, which unfortunately is structured as a tutorial only, and on blog posts of DeBenedetto, a web
+      developer and instructor at Flatiron School. They both come from the Rails community and have a more positive view
+      on the topic. Unfortunately, the majority of online information on ActionCable is either just reprints of Rails
+      guidelines or an instruction to build a chat app, based on the example by Hartl. Some articles, however, help
+      to obtain a critical view on the "the highlight of Rails 5"[22], but the majority of authors agree that
+      ActionCable provides an easy interface for both server-side and client-side code. Our experience during the
+      implementation confirms this statement. </p>
+    <p>
+      All in all, as my research and integrational steps have shown, both the CSS Grid library and ActionCable fulfil
+      the requirements. Both are solid, and even if they are new technologies, they can be successfully integrated in
+      modern web applications.</p>
+    <p class="button-paragraph"><a class="button button-borderless" href="./index.html">back</a>
+    </p>
+  </section>
+
+  <footer>
+    <div class="label">@maria-mazur - 2023 </div>
+    <div>
+      <a href="https://www.linkedin.com/in/maria-mazur-5730844b/" target="_blank">
+        <img src="./img/picto-linkedin white.svg">
+      </a>
+      <a href="https://www.instagram.com/yeheved/" target="_blank">
+        <img src="./img/picto-instagram white.svg">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
