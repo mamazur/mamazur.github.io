@@ -1,7 +1,7 @@
 :root {
-  --primary: #faa307;
-  --primary-variant: #b388eb;
-  --secondary: #ebff7b;
+  --primary: #4a5759;
+  --primary-variant: #c4dbb4;
+  --secondary: #fff1e6;
   --background: #f6f7ff;
   --black: #0B0C0E;
   --white: #ffffff;
@@ -57,6 +57,18 @@
 
 .black-background {
   background: var(--black) !important;
+}
+
+.gradient-1 {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(6deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  align-content: center !important;
+}
+
+.gradient-2 {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(16deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  align-content: center !important;
 }
 
 * {
@@ -122,8 +134,12 @@ ul>li {
   margin: 0;
 }
 
-p {
-  margin-bottom: 1rem;
+p,
+li {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0 0 20px;
 }
 
 .label {
@@ -143,18 +159,6 @@ p {
   flex-grow: 2;
 }
 
-.primary-shadow {
-  text-shadow: -3px 0 var(--gray) !important;
-}
-
-.primary-variant-shadow {
-  text-shadow: -5px 0 var(--primary-variant) !important;
-}
-
-/* *:not(.header__title)>.title:hover {
-  color: var(--primary);
-} */
-
 a {
   text-decoration: none;
   color: var(--primary);
@@ -168,7 +172,6 @@ a {
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.04em;
-  background: var(--background);
   padding: 1rem;
 }
 
@@ -181,6 +184,8 @@ a {
 .button-borderless {
   text-transform: uppercase;
 }
+
+ 
 
 @media (max-width: 576px) {
   body {

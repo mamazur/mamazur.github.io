@@ -5,6 +5,7 @@
 
 .container__flex {
     display: flex;
+    gap: 30px;
 }
 
 .container__desc-80 {
@@ -31,9 +32,12 @@
     width: 30%;
 }
 
-.container__desc-40>img {
+img {
+    height: 100%;
     width: 100%;
-}
+    object-fit: contain;
+    margin: auto;
+   }
 
 .border {
     border: 1px solid var(--black) !important;
@@ -92,13 +96,10 @@
 .margin-5rem-t {
     margin-top: 5rem;
 }
-
-.quote {
-    padding: .2rem;
-    padding-left: 1rem;
-    background: var(--gray);
-    color: var(--background);
+.margin-5rem-b {
+    margin-bottom: 5rem;
 }
+ 
 
 .button-paragraph {
     margin: 2rem 0;
@@ -113,7 +114,6 @@
         width: 90%;
         margin: 0 5%;
     }
-
 
     .container__desc-70 {
         width: 90%;
@@ -138,9 +138,5 @@
     .container__desc-30 {
         width: 90%;
         margin: 0 5%;
-    }
-
-    .container__desc-40>img {
-        display: none;
     }
 }
