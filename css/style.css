@@ -1,7 +1,7 @@
 :root {
   --primary: #4a5759;
   --primary-variant: #c4dbb4;
-  --secondary: #fff1e6;
+  --secondary: #c3f2e0;
   --background: #f6f7ff;
   --black: #0B0C0E;
   --white: #ffffff;
@@ -70,6 +70,11 @@
   background: linear-gradient(16deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
   align-content: center !important;
 }
+.background_orange{
+ background-image: url("../img/projects/tc_3.png");
+ object-fit: cover;
+  align-content: center !important;
+}
 
 * {
   box-sizing: border-box;
@@ -128,19 +133,12 @@ ul>li {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: .9rem;
-  letter-spacing: 0.03125rem;
-  line-height: 140%;
-  margin: 0;
-}
-
-p,
-li {
-  font-weight: 400;
   font-size: 1.2rem;
+  letter-spacing: 0.03125rem;
   line-height: 1.5;
   margin: 0 0 20px;
 }
+ 
 
 .label {
   font-family: 'Montserrat';
@@ -161,7 +159,7 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--black);
 }
 
 .button {

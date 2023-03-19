@@ -6,6 +6,17 @@
 .container__flex {
     display: flex;
     gap: 30px;
+    height: 100%;
+}
+
+.container__flex-wrap, .container__flex-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+.container__flex-line:hover{
+    opacity: 0.3;
 }
 
 .container__desc-80 {
@@ -29,7 +40,7 @@
 }
 
 .container__desc-30 {
-    width: 30%;
+    width: 33%;
 }
 
 img {
@@ -37,7 +48,7 @@ img {
     width: 100%;
     object-fit: contain;
     margin: auto;
-   }
+}
 
 .border {
     border: 1px solid var(--black) !important;
@@ -62,6 +73,7 @@ img {
 .padding-05rem {
     padding: .5rem;
 }
+
 .padding-1rem {
     padding: 1rem;
 }
@@ -93,17 +105,26 @@ img {
 .margin-2rem-t {
     margin-top: 2rem;
 }
+
 .margin-5rem-t {
     margin-top: 5rem;
 }
+
 .margin-5rem-b {
     margin-bottom: 5rem;
 }
- 
+
 
 .button-paragraph {
     margin: 2rem 0;
 }
+
+.truncate-overflow {
+    --max-lines: 8;
+    max-height: calc(1.4rem * var(--max-lines));
+    overflow: hidden;
+  }
+ 
 
 @media (max-width: 576px) {
     .container__flex {
