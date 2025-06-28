@@ -1,139 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>About Me</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio | Maria Mazur </title>
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/navigation.css" rel="stylesheet">
-  <link href="css/container.css" rel="stylesheet">
-  <link href="css/fonts.css" rel="stylesheet">
-  <script type="text/javascript" src="js/scripts.js"></script>
-  <link rel="icon" type="image/ico" href="favicon.ico">
-</head>
-
-<body>
-  <div class="header">
-    <div class="menu">
-      <a class="menu_projects_home label" href="./index.html"> Home</a>
-    </div>
-    <div class="header__title padding-1rem">
-      <div class="title">
-        portfolio
-        <p class="subtitle">
-          software developer living in Munich, Germany <br>
-          art & books lover | feminist | vegetarian <br>
-        </p>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A jekyll based resume template" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar container">
+        <a
+          id="author-name"
+          class="alignable pull-left"
+          href="https://mamazur.github.io/"
+          >Software Developer</a
+        >
       </div>
-    </div>
-  </div>
-  <section class="margin-1rem-b padding-1rem border-l">
-    <div class="padding-1rem">
-      <h2>I'm Maria,</h2>
-      <h3>a full-stack <span class="secondary-background">software developer</span> with a history of working in the
-        financial services
-        and online advertising industry and a Master's degree focused in Informatics</h3>
-      <div class="margin-1rem container__flex">
-        <img src="./img/me.jpeg" style="border-radius: 50%;height:115px;width:115px;" class="padding-05rem">
-        <img src="./img/me.jpeg" style="border-radius: 50%;height:115px;width:115px; opacity: 0.5;"
-          class="padding-05rem">
-        <img src="./img/me.jpeg" style="border-radius: 50%;height:115px;width:115px; opacity: 0.3;"
-          class="padding-05rem">
-        <img src="./img/me.jpeg" style="border-radius: 50%;height:115px;width:115px; opacity: 0.2;"
-          class="padding-05rem">
-        <img src="./img/me.jpeg" style="border-radius: 50%;height:115px;width:115px; opacity: 0.1;"
-          class="padding-05rem">
-      </div>
-      <p>
-        I am currently working as a <span class="secondary-background"> software developer in a SCRUM team</span>
-        responsible for digitalizing a lending process for business customers at one of the most renovated German banks.
-        My team is developing an in-house cloud hosted <span class="secondary-background"> application</span>
-        using mostly Vue.js and Java.
-        <br>
-        In the past few years I have worked mostly with dockerized application written in
-        Node.js, Vue.js,
-        Ruby on Rails and Elixir on AWS infrastructure.
-      </p>
-      <p>
-        I have also gathered experience in large enterprise projects while working as
+      <div style="clear: both"></div>
+      <hr />
 
-        <span class="secondary-background">technical consultant</span>
-        in the area of customer communication services, as well as a development consultant for SAP
-        projects
-        creating custom tailored web based user portals.
-      </p>
-      <p>
-        Having worked for various companies with international teams have shown me a crucial
-        importance
-        of
-        open and proactive communication for the successful completion of a project.
-        In addition to technical knowledge, I consider myself to be a skilled <span
-          class="secondary-background">communicator and collaborator</span>.
-        I enjoy working closely with clients and team members to understand their needs and to develop custom solutions
-        that meet their unique requirements, especially incorporating principles of Lean UX.
-      </p>
+      <div class="container content">
+        <h2 id="about-me">About Me</h2>
 
-      <a href="./projects.html">
-        <h2 class="margin-5rem-t"> <span class="secondary-background">Projects</span></h2>
-      </a>
-      <div>
-        <h3>OpenText / StreamServe - Travel Documents</h3>
+        <p><img class="profile-picture" src="./img/me.jpeg" /></p>
+
         <p>
-          StreamServe solutions help organizations to process and deliver highly personalized documents in paper or
-          electronic formats.
-          Find out how StreamServe solutions have been applied to generate and distribute travel documents to the
-          customer by one of a leading travel providers.
-          <a class="button  " href="./project_tc.html">more details</a>
+          I'm Maria, a full-stack software developer and engineering manager
+          with a history of working in the financial services and online
+          advertising industry and a Master's degree focused in Informatics
         </p>
-      </div>
-      <div>
-        <h3>SAP - Employee Portal</h3>
         <p>
-          The employee portal is a concept that become popular mainly in large corporations - due to
-          the high number of different IT systems and high demand for centralized information access.
-          Here is an example of a project to deliver such a portal to the employees of an international corporation.
-          <a class="button  " href="./project_sap.html">more details</a>
+          I am currently responsible for digitalizing a lending process for
+          business customers at one of the most renovated German banks. My team
+          is developing an in-house cloud hosted application using
+          <strong>Nuxt.js, Vue.js</strong> and Java. In the past few years I
+          have worked mostly with dockerized application written in
+          <strong>Ruby on Rails</strong> and <strong>Elixir/Phoenix</strong> on
+          AWS infrastructure.
         </p>
-      </div>
-      <div class=" margin-2rem-b">
-        <h3>Master's Thesis - Reactive Web Technology for Student Management Systems</h3>
-        <p>
-          This master thesis tries to evaluate these costs for two new reactive web technologies, namely CSS Grid
-          Layout and WebSockets, by integrating them into an existing student management system, Admin on Rails
-          (AoR).
-          <a class="button  " href="./project_msc.html">more details</a>
-        </p>
-      </div>
 
+        <h2 id="education">Education</h2>
 
-      <a href="./challange_figma.html">
-        <h2 class="margin-5rem-t"> <span class="secondary-background">Challanges</span></h2>
-      </a>
-      <div>
-        <h3>Learn Figma basics</h3>
+        <ul>
+          <li>
+            <strong>Master of Science in Informatics</strong>
+            - 2018 - Hochschule Rhein Main, Wiesbaden - Thesis: Reac]ve Web
+            Technology for Student Management Systems
+          </li>
+          <li>
+            <strong>Bachelor of Science in Bioinformatics</strong>
+            - 2011 - Goethe Universität, Frankfurt (Main) - Thesis: Modelling of
+            Processes of Duchenne Muscular Dystrophy with Boolean Approach
+          </li>
+        </ul>
+
+        <h2 id="certificates">Certificates</h2>
+
+        <ul>
+          <li>ITIL Foundation Certificate in IT Service Management</li>
+          <li>Cambridge First Certificate in English - FCE C1</li>
+        </ul>
+
+        <h2 id="social">Contact</h2>
+
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/maria-mazur-5730844b/"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="https://github.com/mamazur">GitHub</a></li>
+        </ul>
+        <!-- 
+        <h2 id="research-interest">Research Interest</h2>
+
         <p>
-          As a web developer I am very passionate about the collaboration with UX colleagues - building an application,
-          I can not emphasize enough the difference between personal taste and researched based UX guidelines. Also, I
-          strongly advocate for a proper use of tooling and a single source of truth approach. That is why I wanted to
-          challenge myself to learn some Figma basics - as this is the current UX/UI tool of choice.
-          <a class="button  " href="./challange_figma.html">more details</a>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat
+          ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce
+          pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque
+          laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc
+          ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.
+        </p>
+
+        <h2 id="typography">Typography</h2>
+
+        <p>
+          This is a <a href="https://google.com">link</a>. Something
+          <em>italics</em> and something <strong>bold</strong>.
+        </p>
+
+        <p>Here is a table</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Award</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2014</td>
+              <td>Emmy</td>
+              <td>Won Outstanding Lead Actor in a miniseries or a movie</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>BAFTA</td>
+              <td>Nominated for Best Leading Actor for Sherlock</td>
+            </tr>
+            <tr>
+              <td>2014</td>
+              <td>Satellite</td>
+              <td>Won Best Actor miniseries or television film</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Here is a horizontal rule</p>
+
+        <hr />
+
+        <p>Here is a blockquote</p>
+
+        <blockquote>
+          <p>To a great mind, nothing is little</p>
+        </blockquote>
+
+        <h2 id="references">References</h2>
+
+        <ul>
+          <li>Foo Bar: Head of Department, Placeholder Names, Lorem</li>
+          <li>
+            John Doe: Associate Professor, Department of Computer Science, Ipsum
+          </li>
+        </ul>-->
+
+        <hr />
+        <p style="text-align: center; margin-bottom: 10px">
+          <a href="https://github.com/ankitsultana" style="color: black"
+            ><small>Page design by Ankit Sultana</small></a
+          >
         </p>
       </div>
     </div>
-  </section>
-
-  <footer>
-    <div class="label padding-05rem">@maria-mazur - <script>document.write(/\d{4}/.exec(Date())[0])</script>  </div>
-    <div>
-      <a href="https://www.linkedin.com/in/maria-mazur-5730844b/" target="_blank">
-        <img src="./img/picto-linkedin white.svg">
-      </a>
-      <a href="https://www.instagram.com/yeheved/" target="_blank">
-        <img src="./img/picto-instagram white.svg">
-      </a>
-    </div>
-  </footer>
-</body>
-
+  </body>
+  <footer></footer>
 </html>
